@@ -5,7 +5,7 @@ import { Link, Route } from 'wouter';
 
 const App = () => (
   <div>
-    <h1>demo-span</h1>
+    <h1>demo-spa</h1>
 
     <div>
       <Link href="/">

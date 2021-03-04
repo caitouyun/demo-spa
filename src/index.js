@@ -1,8 +1,30 @@
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Link, Route } from 'wouter';
+
+const App = () => (
+  <div>
+    <h1>demo-span</h1>
+
+    <div>
+      <Link href="/">
+        <a>首页</a>
+      </Link>
+      <Link href="/about">
+        <a>关于</a>
+      </Link>
+    </div>
+
+    <Route path="/">
+      <h2>首页</h2>
+    </Route>
+
+    <Route path="/about">
+      <h2>关于</h2>
+    </Route>
+  </div>
+);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,8 +32,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

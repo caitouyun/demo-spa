@@ -1,2 +1,5 @@
 site: demospa
 public: build
+rewrites:
+  source: '**'
+  destination: /index.html

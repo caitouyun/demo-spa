@@ -9,10 +9,10 @@ const App = () => (
 
     <div>
       <Link href="/">
-        <a>首页</a>
+        <a href="/">首页</a>
       </Link>
       <Link href="/about">
-        <a>关于</a>
+        <a href="/about">关于</a>
       </Link>
     </div>
 
